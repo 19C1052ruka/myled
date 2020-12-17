@@ -23,5 +23,4 @@
   また、echo 1 > /dev/myled0を実行した場合全てのLEDが消える。
   5から0までは１秒ごとに切り替わる。
 ## デモ動画
-![demo]
-(https://photos.google.com/share/AF1QipOrpEjVxdDNqU3ABCEvRBU63t76ByhweZkfojrQ2kiH68vvFQqH7QgViLnTAIGtwQ?key=R3RhX3d2MFBlcWtQdTUwV2ZMckEtc3Bad09oOTFR)
+- https://www.youtube.com/watch?v=9QS34k75HV0&feature=youtu.be
