@@ -9,9 +9,10 @@
 - 20Pジャンパー線
 - 7セグメント
 - 抵抗器(220Ω)
+## インストール手順
+- git clone https://github.com/sakurai-ruka/kadai1.git
 ##  実行方法
   実行方法は上から順にコマンドを打つ
-  - git clone https://github.com/sakurai-ruka/kadai1.git
   - cd kadai1
   - make
   - sudo rmmod myled
