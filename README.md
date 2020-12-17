@@ -13,12 +13,11 @@
 - `git clone https://github.com/sakurai-ruka/kadai1.git`
 ##  実行方法
   実行方法は上から順にコマンドを打つ
-  - cd kadai1
-  - make
-  - sudo rmmod myled
-  - sudo insmod myled.ko
-  - sudo chmod 666 /dev/myled0
-  - echo 0 > /dev/myled0
+  - `cd kadai1`
+  - `make`
+  - `sudo insmod myled.ko`
+  - `sudo chmod 666 /dev/myled0`
+  - `echo 0 > /dev/myled0`
 ##  実行結果
   実行結果はecho 0 > /dev/myled0を実行した時、７セグメントに5から0まで順に表示され数字が切り替わるごとに対応するLEDが光る。
   また、echo 1 > /dev/myled0を実行した場合全てのLEDが消える。
