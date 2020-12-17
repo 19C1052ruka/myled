@@ -22,7 +22,7 @@ static ssize_t led_write(struct file*filp,const char*buf, size_t cunt,loff_t*pos
 {
 	char c;
 	if(copy_from_user(&c,buf,sizeof(char)))
-	return -EFAULT;
+		return -EFAULT;
 
 	if(c == '0'){
 		gpio_base[10] = 1 << 21;
