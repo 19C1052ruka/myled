@@ -22,3 +22,6 @@
   実行結果はecho 0 > /dev/myled0を実行した時、７セグメントに5から0まで順に表示され数字が切り替わるごとに対応するLEDが光る。
   また、echo 1 > /dev/myled0を実行した場合全てのLEDが消える。
   5から0までは１秒ごとに切り替わる。
+## デモ動画
+- ![demo]
+(https://photos.google.com/share/AF1QipOrpEjVxdDNqU3ABCEvRBU63t76ByhweZkfojrQ2kiH68vvFQqH7QgViLnTAIGtwQ?key=R3RhX3d2MFBlcWtQdTUwV2ZMckEtc3Bad09oOTFR)
