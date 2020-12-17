@@ -9,7 +9,7 @@
 #include <linux/uaccess.h>
 #include <linux/io.h>
 #include <linux/delay.h>
-MODULE_AUTHOR("Ryuichi Ueda&Sakurai Ruka");
+MODULE_AUTHOR("Ryuichi Ueda & Sakurai Ruka");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.1");
