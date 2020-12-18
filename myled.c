@@ -136,9 +136,10 @@ static int __init init_mod(void){
 	int retval;
 	retval = alloc_chrdev_region(&dev, 0,1,"myled");
 	if(retval < 0){
-	printk(KERN_ERR " alloc_chrdev_region failed. \n");                                                                        		return retval;
+	printk(KERN_ERR " alloc_chrdev_region failed. \n"); 
+		return retval;
 	}
-	                                                                                                                                   printk(KERN_INFO "%s is loaded. major:%d\n",__FILE__,MAJOR(dev));
+	printk(KERN_INFO "%s is loaded. major:%d\n",__FILE__,MAJOR(dev));
 	cdev_init(&cdv, &led_fops);
 	retval = cdev_add(&cdv, dev,1);
 	if(retval < 0){
