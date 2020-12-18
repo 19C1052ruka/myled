@@ -18,8 +18,7 @@ static dev_t dev;
 static struct cdev cdv;
 static struct class *cls = NULL;
 static volatile u32 *gpio_base = NULL;
-static ssize_t led_write(struct file*filp,const char*buf, size_t cunt,loff_t*pos)
-{
+static ssize_t led_write(struct file*filp,const char*buf, size_t cunt,loff_t*pos){
 	char c;
 	if(copy_from_user(&c,buf,sizeof(char)))
 		return -EFAULT;
@@ -133,8 +132,7 @@ static struct file_operations led_fops={
 	.owner = THIS_MODULE,
 	.write = led_write
 };
-static int __init init_mod(void)
-{
+static int __init init_mod(void){
 	int retval;
 	retval = alloc_chrdev_region(&dev, 0,1,"myled");
 	if(retval < 0){
@@ -241,8 +239,7 @@ static int __init init_mod(void)
 	gpio_base[index_0] = (gpio_base[index_0] & mask_0) | (0x1 << shift_0);
 	return 0;
 }
-static void __exit cleanup_mod(void)
-{
+static void __exit cleanup_mod(void){
 	cdev_del(&cdv);
 	device_destroy(cls, dev);
 	class_destroy(cls);
