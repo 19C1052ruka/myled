@@ -143,14 +143,13 @@ static int __init init_mod(void){
 	cdev_init(&cdv, &led_fops);
 	retval = cdev_add(&cdv, dev,1);
 	if(retval < 0){
-		        printk(KERN_ERR " cdev_add failed.major:%d, minor:%d\n",MAJOR(dev),MINOR(dev));
-			return retval;
+		printk(KERN_ERR " cdev_add failed.major:%d, minor:%d\n",MAJOR(dev),MINOR(dev));
+		return retval;
 	}
 	cls = class_create(THIS_MODULE,"myled");
 	if(IS_ERR(cls)){
 		printk(KERN_ERR"class_create failed.");
 		return PTR_ERR(cls);
-	
 	}
 	device_create(cls, NULL, dev,NULL,"myled%d",MINOR(dev));
 	gpio_base = ioremap_nocache(0xfe200000, 0xA0);
