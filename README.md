@@ -29,4 +29,4 @@
 ## デモ動画
 - https://www.youtube.com/watch?v=9QS34k75HV0&feature=youtu.be
 ## ライセンス
--GNU General Public Licence v3.0
+- GNU General Public Licence v3.0
