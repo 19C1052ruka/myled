@@ -1,4 +1,8 @@
 # myled
+## リポジトリ概要
+-2020年度ロボットシステム学、課題１の提出ファイルです。
+## 目的
+-7セグを使いカウントダウンをします
 ##  使用環境 
   Ubuntu20.04LTS
 ##  使用機材　
@@ -24,3 +28,5 @@
   5から0までは１秒ごとに切り替わる。
 ## デモ動画
 - https://www.youtube.com/watch?v=9QS34k75HV0&feature=youtu.be
+##ライセンス
+-GNU General Public Licence v3.0
